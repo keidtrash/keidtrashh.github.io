@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>stymc brand.co</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600&display=swap" rel="stylesheet">
+	<style>
+		body {
+			font-family: 'Montserrat', sans-serif;
+			background-color: #f4f4f4;
+			padding: 0;
+			margin: 0;
+		}
+
+		.container {
+			max-width: 600px;
+			margin: auto;
+			padding: 50px 20px;
+			background-color: #fff;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0,0,0,0.2);
+		}
+
+		.logo {
+			display: block;
+			margin: auto;
+			width: 300px;
+			height: 300px;
+		}
+
+		form {
+			margin-top: 50px;
+			display: flex;
+			flex-direction: column;
+		}
+
+		input {
+			padding: 10px;
+			margin-bottom: 20px;
+			border-radius: 5px;
+			border: none;
+		}
+
+		input[type="submit"] {
+			background-color: #4c4c4c;
+			color: #fff;
+			font-weight: 600;
+			border-radius: 5px;
+			cursor: pointer;
+			margin-top: 20px;
+			padding: 10px;
+		}
+
+		.buttons-container {
+			display: flex;
+			justify-content: space-between;
+			margin-top: 20px;
+		}
+
+		.buttons-container button {
+			background-color: #4c4c4c;
+			color: #fff;
+			font-weight: 600;
+			border-radius: 20px;
+			padding: 10px 20px;
+			border: none;
+			cursor: pointer;
+		}
+
+		.buttons-container button:hover {
+			background-color: #3b3b3b;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<img class="logo" src="img/SELLNO NEGRO.png"Logo de la marca de ropa">
+
+		<form>
+			<label for="phone">Número telefónico:</label>
+			<input type="tel" id="phone" name="phone">
+
+			<label for="name">Nombre completo:</label>
+			<input type="text" id="name" name="name">
+
+			<label for="country">País:</label>
+			<select id="country" name="country">
+				<option value="">Seleccione un país</option>
+				<option value="mx">México</option>
+				<option value="us">Estados Unidos</option>
+				<option value="es">España</option>
+				<option value="ar">Argentina</option>
+			</select>
+
+			<input type="submit" value="Iniciar sesión">
+		</form>
+
+		<div class="buttons-container">
+			<a href="index.html"><button>Volver al inicio</button></a>
+			<button>Registrarse</button>
+		</div>
+	</div>
+</body>
+</html>
